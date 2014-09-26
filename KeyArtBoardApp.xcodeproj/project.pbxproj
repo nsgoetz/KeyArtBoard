@@ -510,6 +510,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = KeyArtBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -520,6 +521,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = KeyArtBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -545,6 +547,7 @@
 				B3B6E0D019D5C9C100CE7113 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B3B6E0D119D5C9C100CE7113 /* Build configuration list for PBXNativeTarget "KeyArtBoardAppTests" */ = {
 			isa = XCConfigurationList;
@@ -553,6 +556,7 @@
 				B3B6E0D319D5C9C100CE7113 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B3B6E0E319D5C9D100CE7113 /* Build configuration list for PBXNativeTarget "KeyArtBoard" */ = {
 			isa = XCConfigurationList;
@@ -561,6 +565,7 @@
 				B3B6E0E519D5C9D100CE7113 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

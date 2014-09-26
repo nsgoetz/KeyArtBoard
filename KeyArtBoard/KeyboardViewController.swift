@@ -12,6 +12,7 @@ class KeyboardViewController: UIInputViewController {
 
     @IBOutlet var nextKeyboardButton: UIButton!
     var artButtons : [KeyArtButton] = [KeyboardButtonFactory.generateKeyArtButton(title: "title", text: "text", place: 0)]
+    var textForButton : [String: String] = ["": ""];
     
     override func updateViewConstraints() {
         super.updateViewConstraints()
@@ -29,17 +30,27 @@ class KeyboardViewController: UIInputViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        for artButton in self.artButtons {
+            self.drawNextButton(artButton)
+        }
         self.drawNextKeyboardButton()
     }
     
-    func drawNextButton() {
-        var nextButton = artButtons[0].button
-        self.someButton.addTarget(self, action: "displayTitle:",
+    func drawNextButton(artButton: KeyArtButton) {
+        var nextButton = artButton.button
+        self.textForButton[artButton.title] = artButton.text
+        nextButton.addTarget(self, action: Selector("insertArt:"),
             forControlEvents:UIControlEvents.TouchUpInside)
-        self.view.addSubview(self.someButton)
-        var buttonCenterX = NSLayoutConstraint(item: self.someButton, attribute: .CenterX, relatedBy: .Equal, toItem: self.view, attribute: .CenterX, multiplier: 1.5, constant: 0.0)
-        var buttonCenterY = NSLayoutConstraint(item: self.someButton, attribute: .CenterY, relatedBy: .Equal, toItem: self.view, attribute: .CenterY, multiplier: 1.0, constant: 0.0)
+        self.view.addSubview(nextButton)
+        var buttonCenterX = NSLayoutConstraint(item: nextButton, attribute: .CenterX, relatedBy: .Equal, toItem: self.view, attribute: .CenterX, multiplier: 1.5, constant: 0.0)
+        var buttonCenterY = NSLayoutConstraint(item: nextButton, attribute: .CenterY, relatedBy: .Equal, toItem: self.view, attribute: .CenterY, multiplier: 1.0, constant: 0.0)
         self.view.addConstraints([buttonCenterX, buttonCenterY])
+    }
+    
+    func insertArt(sender: UIButton) -> (){
+        var proxy = self.textDocumentProxy as UITextDocumentProxy
+        var text = self.textForButton[sender.titleLabel!.text!]
+        proxy.insertText(text!)
     }
 
     func drawNextKeyboardButton() {
