@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0797001E19D7641D006A2EA9 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797001D19D7641D006A2EA9 /* DrawView.swift */; };
+		0797002219D766D7006A2EA9 /* CreateNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797002119D766D7006A2EA9 /* CreateNewViewController.swift */; };
+		0797002419D76949006A2EA9 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797002319D76949006A2EA9 /* Line.swift */; };
 		B3B6E0B219D5C9C100CE7113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B6E0B119D5C9C100CE7113 /* AppDelegate.swift */; };
 		B3B6E0B519D5C9C100CE7113 /* KeyArtBoardApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3B6E0B319D5C9C100CE7113 /* KeyArtBoardApp.xcdatamodeld */; };
 		B3B6E0B719D5C9C100CE7113 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B6E0B619D5C9C100CE7113 /* ViewController.swift */; };
@@ -58,6 +61,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0797001D19D7641D006A2EA9 /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
+		0797002119D766D7006A2EA9 /* CreateNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewViewController.swift; sourceTree = "<group>"; };
+		0797002319D76949006A2EA9 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		B3B6E0AC19D5C9C100CE7113 /* KeyArtBoardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyArtBoardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B6E0B019D5C9C100CE7113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3B6E0B119D5C9C100CE7113 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -125,11 +131,14 @@
 			children = (
 				B3B6E0B119D5C9C100CE7113 /* AppDelegate.swift */,
 				B3B6E0B619D5C9C100CE7113 /* ViewController.swift */,
+				0797001D19D7641D006A2EA9 /* DrawView.swift */,
 				B3B6E0B819D5C9C100CE7113 /* Main.storyboard */,
+				0797002119D766D7006A2EA9 /* CreateNewViewController.swift */,
 				B3B6E0BB19D5C9C100CE7113 /* Images.xcassets */,
 				B3B6E0BD19D5C9C100CE7113 /* LaunchScreen.xib */,
 				B3B6E0B319D5C9C100CE7113 /* KeyArtBoardApp.xcdatamodeld */,
 				B3B6E0AF19D5C9C100CE7113 /* Supporting Files */,
+				0797002319D76949006A2EA9 /* Line.swift */,
 			);
 			path = KeyArtBoardApp;
 			sourceTree = "<group>";
@@ -310,7 +319,10 @@
 			files = (
 				B3B6E0B719D5C9C100CE7113 /* ViewController.swift in Sources */,
 				B3B6E0B519D5C9C100CE7113 /* KeyArtBoardApp.xcdatamodeld in Sources */,
+				0797001E19D7641D006A2EA9 /* DrawView.swift in Sources */,
+				0797002419D76949006A2EA9 /* Line.swift in Sources */,
 				B3B6E0B219D5C9C100CE7113 /* AppDelegate.swift in Sources */,
+				0797002219D766D7006A2EA9 /* CreateNewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
