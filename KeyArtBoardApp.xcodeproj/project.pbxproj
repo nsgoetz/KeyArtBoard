@@ -15,13 +15,13 @@
 		0797002A19D79D3C006A2EA9 /* KeyBoardAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797002919D79D3C006A2EA9 /* KeyBoardAppDelegate.swift */; };
 		0797002D19D79E6C006A2EA9 /* TypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797002B19D79E6C006A2EA9 /* TypeVC.swift */; };
 		0797002E19D79E6C006A2EA9 /* TypeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0797002C19D79E6C006A2EA9 /* TypeVC.xib */; };
+		0797003019D7A685006A2EA9 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797002F19D7A685006A2EA9 /* KeyboardViewController.swift */; };
 		B3B6E0B219D5C9C100CE7113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B6E0B119D5C9C100CE7113 /* AppDelegate.swift */; };
 		B3B6E0B519D5C9C100CE7113 /* KeyArtBoardApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3B6E0B319D5C9C100CE7113 /* KeyArtBoardApp.xcdatamodeld */; };
 		B3B6E0BA19D5C9C100CE7113 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3B6E0B819D5C9C100CE7113 /* Main.storyboard */; };
 		B3B6E0BC19D5C9C100CE7113 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3B6E0BB19D5C9C100CE7113 /* Images.xcassets */; };
 		B3B6E0BF19D5C9C100CE7113 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3B6E0BD19D5C9C100CE7113 /* LaunchScreen.xib */; };
 		B3B6E0CB19D5C9C100CE7113 /* KeyArtBoardAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B6E0CA19D5C9C100CE7113 /* KeyArtBoardAppTests.swift */; };
-		B3B6E0DD19D5C9D100CE7113 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B6E0DC19D5C9D100CE7113 /* KeyboardViewController.swift */; };
 		B3B6E0E019D5C9D100CE7113 /* KeyArtBoard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B3B6E0D819D5C9D100CE7113 /* KeyArtBoard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B3B6E0E819D5CCD100CE7113 /* KeyboardButtonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B6E0E719D5CCD100CE7113 /* KeyboardButtonFactory.swift */; };
 /* End PBXBuildFile section */
@@ -73,6 +73,7 @@
 		0797002919D79D3C006A2EA9 /* KeyBoardAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyBoardAppDelegate.swift; sourceTree = "<group>"; };
 		0797002B19D79E6C006A2EA9 /* TypeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeVC.swift; sourceTree = "<group>"; };
 		0797002C19D79E6C006A2EA9 /* TypeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TypeVC.xib; sourceTree = "<group>"; };
+		0797002F19D7A685006A2EA9 /* KeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		B3B6E0AC19D5C9C100CE7113 /* KeyArtBoardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyArtBoardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B6E0B019D5C9C100CE7113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3B6E0B119D5C9C100CE7113 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,7 +86,6 @@
 		B3B6E0CA19D5C9C100CE7113 /* KeyArtBoardAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyArtBoardAppTests.swift; sourceTree = "<group>"; };
 		B3B6E0D819D5C9D100CE7113 /* KeyArtBoard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KeyArtBoard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B6E0DB19D5C9D100CE7113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B3B6E0DC19D5C9D100CE7113 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		B3B6E0E719D5CCD100CE7113 /* KeyboardButtonFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardButtonFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -178,9 +178,9 @@
 		B3B6E0D919D5C9D100CE7113 /* KeyArtBoard */ = {
 			isa = PBXGroup;
 			children = (
-				B3B6E0DC19D5C9D100CE7113 /* KeyboardViewController.swift */,
 				B3B6E0E719D5CCD100CE7113 /* KeyboardButtonFactory.swift */,
 				0797002919D79D3C006A2EA9 /* KeyBoardAppDelegate.swift */,
+				0797002F19D7A685006A2EA9 /* KeyboardViewController.swift */,
 				0797002519D79C17006A2EA9 /* DrawVC.swift */,
 				0797002B19D79E6C006A2EA9 /* TypeVC.swift */,
 				0797002C19D79E6C006A2EA9 /* TypeVC.xib */,
@@ -351,8 +351,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3B6E0DD19D5C9D100CE7113 /* KeyboardViewController.swift in Sources */,
 				0797002A19D79D3C006A2EA9 /* KeyBoardAppDelegate.swift in Sources */,
+				0797003019D7A685006A2EA9 /* KeyboardViewController.swift in Sources */,
 				0797002719D79C18006A2EA9 /* DrawVC.swift in Sources */,
 				0797002D19D79E6C006A2EA9 /* TypeVC.swift in Sources */,
 				B3B6E0E819D5CCD100CE7113 /* KeyboardButtonFactory.swift in Sources */,

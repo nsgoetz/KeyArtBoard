@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DrawVC: UIViewController {
+class DrawVC: UIInputViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

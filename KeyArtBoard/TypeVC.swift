@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TypeVC: UIViewController {
+class TypeVC: UIInputViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
