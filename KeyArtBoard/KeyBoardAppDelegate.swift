@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
@@ -16,8 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
             let tabBarController = UITabBarController()
             let myVC1 = TypeVC(nibName: "Keyboard", bundle: nil)
-            let myVC2 = DrawVC(nibName: "Drawing", bundle: nil)
-            let controllers = [myVC1,myVC2]
+            let myVC2 = KeyboardViewController(nibName: "Drawing", bundle: nil)
+            let controllers = [myVC2,myVC1]
             tabBarController.viewControllers = controllers
             window?.rootViewController = tabBarController
             //let firstImage = UIImage(named: "pie bar icon")

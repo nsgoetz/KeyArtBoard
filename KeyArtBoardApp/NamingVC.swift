@@ -1,5 +1,5 @@
 //
-//  DrawVC.swift
+//  NamingVC.swift
 //  KeyArtBoardApp
 //
 //  Created by Eric on 9/27/14.
@@ -8,7 +8,8 @@
 
 import UIKit
 
-class DrawVC: UIInputViewController {
+class NamingVC: UIViewController {
+    @IBOutlet var drawView : DrawView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,5 +32,19 @@ class DrawVC: UIInputViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func ConvertPressed() {
+        
+    }
+    
+    @IBAction func cancel(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 
+    @IBAction func saveUnwind(sender: AnyObject) {
+            dismissViewControllerAnimated(true, completion: nil)
+        
+        }
+
+    
 }

@@ -13,6 +13,9 @@ class DrawView: UIView {
     var lines: [Line] = []
     var lastPoint: CGPoint?
     var newPoint: CGPoint?
+    var context = UIGraphicsGetCurrentContext()
+    var image: UIImage?
+
     
     required init(coder aDecoder: (NSCoder!)) {
         super.init(coder: aDecoder)
@@ -33,7 +36,7 @@ class DrawView: UIView {
     }
     
     override func drawRect(rect: CGRect) {
-        var context = UIGraphicsGetCurrentContext()
+        
         CGContextBeginPath(context)
         for line in lines {
             CGContextMoveToPoint(context, line.start.x, line.start.y)
@@ -44,7 +47,9 @@ class DrawView: UIView {
         CGContextSetLineWidth(context, 5)
         CGContextSetLineCap(context, kCGLineCapRound)
         CGContextStrokePath(context)
+        image = UIGraphicsGetImageFromCurrentImageContext()
     }
+    
     /*
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
