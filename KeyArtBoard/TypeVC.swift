@@ -1,5 +1,5 @@
 //
-//  CreateNewViewController.swift
+//  TypeVC.swift
 //  KeyArtBoardApp
 //
 //  Created by Eric on 9/27/14.
@@ -8,9 +8,7 @@
 
 import UIKit
 
-class CreateNewViewController: UIViewController {
-    
-    @IBOutlet var drawView : DrawView?
+class TypeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,12 +21,6 @@ class CreateNewViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func clearTapped() {
-        var theDrawView = drawView as DrawView!
-        theDrawView.lines = []
-        theDrawView.setNeedsDisplay()
-        
-    }
 
     /*
     // MARK: - Navigation

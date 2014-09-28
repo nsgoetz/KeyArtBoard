@@ -10,9 +10,13 @@
 		0797001E19D7641D006A2EA9 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797001D19D7641D006A2EA9 /* DrawView.swift */; };
 		0797002219D766D7006A2EA9 /* CreateNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797002119D766D7006A2EA9 /* CreateNewViewController.swift */; };
 		0797002419D76949006A2EA9 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797002319D76949006A2EA9 /* Line.swift */; };
+		0797002719D79C18006A2EA9 /* DrawVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797002519D79C17006A2EA9 /* DrawVC.swift */; };
+		0797002819D79C18006A2EA9 /* DrawVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0797002619D79C17006A2EA9 /* DrawVC.xib */; };
+		0797002A19D79D3C006A2EA9 /* KeyBoardAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797002919D79D3C006A2EA9 /* KeyBoardAppDelegate.swift */; };
+		0797002D19D79E6C006A2EA9 /* TypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797002B19D79E6C006A2EA9 /* TypeVC.swift */; };
+		0797002E19D79E6C006A2EA9 /* TypeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0797002C19D79E6C006A2EA9 /* TypeVC.xib */; };
 		B3B6E0B219D5C9C100CE7113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B6E0B119D5C9C100CE7113 /* AppDelegate.swift */; };
 		B3B6E0B519D5C9C100CE7113 /* KeyArtBoardApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3B6E0B319D5C9C100CE7113 /* KeyArtBoardApp.xcdatamodeld */; };
-		B3B6E0B719D5C9C100CE7113 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B6E0B619D5C9C100CE7113 /* ViewController.swift */; };
 		B3B6E0BA19D5C9C100CE7113 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3B6E0B819D5C9C100CE7113 /* Main.storyboard */; };
 		B3B6E0BC19D5C9C100CE7113 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3B6E0BB19D5C9C100CE7113 /* Images.xcassets */; };
 		B3B6E0BF19D5C9C100CE7113 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3B6E0BD19D5C9C100CE7113 /* LaunchScreen.xib */; };
@@ -64,11 +68,15 @@
 		0797001D19D7641D006A2EA9 /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 		0797002119D766D7006A2EA9 /* CreateNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewViewController.swift; sourceTree = "<group>"; };
 		0797002319D76949006A2EA9 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		0797002519D79C17006A2EA9 /* DrawVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawVC.swift; sourceTree = "<group>"; };
+		0797002619D79C17006A2EA9 /* DrawVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawVC.xib; sourceTree = "<group>"; };
+		0797002919D79D3C006A2EA9 /* KeyBoardAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyBoardAppDelegate.swift; sourceTree = "<group>"; };
+		0797002B19D79E6C006A2EA9 /* TypeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeVC.swift; sourceTree = "<group>"; };
+		0797002C19D79E6C006A2EA9 /* TypeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TypeVC.xib; sourceTree = "<group>"; };
 		B3B6E0AC19D5C9C100CE7113 /* KeyArtBoardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyArtBoardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B6E0B019D5C9C100CE7113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3B6E0B119D5C9C100CE7113 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3B6E0B419D5C9C100CE7113 /* KeyArtBoardApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KeyArtBoardApp.xcdatamodel; sourceTree = "<group>"; };
-		B3B6E0B619D5C9C100CE7113 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B3B6E0B919D5C9C100CE7113 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3B6E0BB19D5C9C100CE7113 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B3B6E0BE19D5C9C100CE7113 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -130,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				B3B6E0B119D5C9C100CE7113 /* AppDelegate.swift */,
-				B3B6E0B619D5C9C100CE7113 /* ViewController.swift */,
 				0797001D19D7641D006A2EA9 /* DrawView.swift */,
 				B3B6E0B819D5C9C100CE7113 /* Main.storyboard */,
 				0797002119D766D7006A2EA9 /* CreateNewViewController.swift */,
@@ -173,6 +180,11 @@
 			children = (
 				B3B6E0DC19D5C9D100CE7113 /* KeyboardViewController.swift */,
 				B3B6E0E719D5CCD100CE7113 /* KeyboardButtonFactory.swift */,
+				0797002919D79D3C006A2EA9 /* KeyBoardAppDelegate.swift */,
+				0797002519D79C17006A2EA9 /* DrawVC.swift */,
+				0797002B19D79E6C006A2EA9 /* TypeVC.swift */,
+				0797002C19D79E6C006A2EA9 /* TypeVC.xib */,
+				0797002619D79C17006A2EA9 /* DrawVC.xib */,
 				B3B6E0DA19D5C9D100CE7113 /* Supporting Files */,
 			);
 			path = KeyArtBoard;
@@ -307,6 +319,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0797002E19D79E6C006A2EA9 /* TypeVC.xib in Resources */,
+				0797002819D79C18006A2EA9 /* DrawVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +331,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3B6E0B719D5C9C100CE7113 /* ViewController.swift in Sources */,
 				B3B6E0B519D5C9C100CE7113 /* KeyArtBoardApp.xcdatamodeld in Sources */,
 				0797001E19D7641D006A2EA9 /* DrawView.swift in Sources */,
 				0797002419D76949006A2EA9 /* Line.swift in Sources */,
@@ -339,6 +352,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3B6E0DD19D5C9D100CE7113 /* KeyboardViewController.swift in Sources */,
+				0797002A19D79D3C006A2EA9 /* KeyBoardAppDelegate.swift in Sources */,
+				0797002719D79C18006A2EA9 /* DrawVC.swift in Sources */,
+				0797002D19D79E6C006A2EA9 /* TypeVC.swift in Sources */,
 				B3B6E0E819D5CCD100CE7113 /* KeyboardButtonFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

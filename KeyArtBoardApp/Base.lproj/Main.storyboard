@@ -2,41 +2,53 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wGB-pP-7dl">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Create New-->
         <scene sceneID="BGN-HX-wJS">
             <objects>
-                <viewController id="ECv-zK-Cwh" customClass="CreateNewViewController" sceneMemberID="viewController">
+                <viewController id="ECv-zK-Cwh" customClass="CreateNewViewController" customModule="KeyArtBoardApp" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lT1-21-s8p"/>
-                        <viewControllerLayoutGuide type="bottom" id="jg3-HC-ZgA"/>
+                        <viewControllerLayoutGuide type="top" id="2Ze-Fb-cjN"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q9e-qC-7e4"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="2KR-FV-dpj">
+                    <view key="view" contentMode="scaleToFill" id="zP5-Fd-ExO" customClass="DrawView" customModule="KeyArtBoardApp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vlg-NZ-Gl2" customClass="DrawView" customModule="KeyArtBoardApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="66" width="600" height="485"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Itd-Qt-uOP">
-                                <rect key="frame" x="282" y="28" width="37" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWg-Xp-YZa">
+                                <rect key="frame" x="519" y="10" width="55" height="30"/>
+                                <state key="normal" title="Convert">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hqh-TY-dg8">
+                                <rect key="frame" x="26" y="10" width="37" height="30"/>
                                 <state key="normal" title="Clear">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="clearTapped" destination="ECv-zK-Cwh" eventType="touchUpInside" id="JZ6-VK-dX6"/>
+                                    <action selector="clearTapped" destination="ECv-zK-Cwh" eventType="touchUpInside" id="nFF-Sf-Jyr"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hqh-TY-dg8" firstAttribute="top" secondItem="zP5-Fd-ExO" secondAttribute="topMargin" constant="10" id="1Z0-Qg-ueF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CWg-Xp-YZa" secondAttribute="trailing" constant="10" id="iFa-Gx-YWV"/>
+                            <constraint firstItem="Hqh-TY-dg8" firstAttribute="leading" secondItem="zP5-Fd-ExO" secondAttribute="leadingMargin" constant="10" id="jxc-y4-rJV"/>
+                            <constraint firstItem="CWg-Xp-YZa" firstAttribute="top" secondItem="zP5-Fd-ExO" secondAttribute="topMargin" constant="10" id="zeq-6s-TkV"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Create New" id="MEc-pt-eVv"/>
+                    <connections>
+                        <outlet property="drawView" destination="zP5-Fd-ExO" id="t70-1a-72r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dV8-uu-fSI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1054" y="588"/>
+            <point key="canvasLocation" x="1054" y="600"/>
         </scene>
         <!--Existing-->
         <scene sceneID="OB0-Q5-k51">
