@@ -16,11 +16,12 @@ class DrawView: UIView {
     
     required init(coder aDecoder: (NSCoder!)) {
         super.init(coder: aDecoder)
+        test()
     }
     override func touchesBegan(touches: (NSSet!), withEvent event: (UIEvent!)) {
         if let point = touches.anyObject()?.locationInView(self){
-        lastPoint = touches.anyObject()?.locationInView(self)
-    }
+            lastPoint = touches.anyObject()?.locationInView(self)
+        }
     }
     override func touchesMoved(touches: (NSSet!), withEvent event: (UIEvent!)) {
         if let touch = touches.anyObject() as? UITouch{
@@ -30,6 +31,10 @@ class DrawView: UIView {
         lastPoint = newPoint!
         
         self.setNeedsDisplay()
+    }
+    
+    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+        //NSLog("%@", linesToAscii(lines, 5))
     }
     
     override func drawRect(rect: CGRect) {

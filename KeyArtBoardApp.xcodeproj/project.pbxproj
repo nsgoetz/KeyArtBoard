@@ -10,6 +10,8 @@
 		0797001E19D7641D006A2EA9 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797001D19D7641D006A2EA9 /* DrawView.swift */; };
 		0797002219D766D7006A2EA9 /* CreateNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797002119D766D7006A2EA9 /* CreateNewViewController.swift */; };
 		0797002419D76949006A2EA9 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797002319D76949006A2EA9 /* Line.swift */; };
+		A2235AD619D8761500CF0AB1 /* ArtToAscii.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2235AD519D8761500CF0AB1 /* ArtToAscii.swift */; };
+		A2235ADC19D8AD2700CF0AB1 /* ArrayToASCII.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2235ADB19D8AD2700CF0AB1 /* ArrayToASCII.swift */; };
 		B3B6E0B219D5C9C100CE7113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B6E0B119D5C9C100CE7113 /* AppDelegate.swift */; };
 		B3B6E0B519D5C9C100CE7113 /* KeyArtBoardApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3B6E0B319D5C9C100CE7113 /* KeyArtBoardApp.xcdatamodeld */; };
 		B3B6E0B719D5C9C100CE7113 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B6E0B619D5C9C100CE7113 /* ViewController.swift */; };
@@ -64,6 +66,8 @@
 		0797001D19D7641D006A2EA9 /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 		0797002119D766D7006A2EA9 /* CreateNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewViewController.swift; sourceTree = "<group>"; };
 		0797002319D76949006A2EA9 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		A2235AD519D8761500CF0AB1 /* ArtToAscii.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtToAscii.swift; sourceTree = "<group>"; };
+		A2235ADB19D8AD2700CF0AB1 /* ArrayToASCII.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayToASCII.swift; sourceTree = "<group>"; };
 		B3B6E0AC19D5C9C100CE7113 /* KeyArtBoardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyArtBoardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B6E0B019D5C9C100CE7113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3B6E0B119D5C9C100CE7113 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +133,7 @@
 		B3B6E0AE19D5C9C100CE7113 /* KeyArtBoardApp */ = {
 			isa = PBXGroup;
 			children = (
+				A2235ADB19D8AD2700CF0AB1 /* ArrayToASCII.swift */,
 				B3B6E0B119D5C9C100CE7113 /* AppDelegate.swift */,
 				B3B6E0B619D5C9C100CE7113 /* ViewController.swift */,
 				0797001D19D7641D006A2EA9 /* DrawView.swift */,
@@ -139,6 +144,7 @@
 				B3B6E0B319D5C9C100CE7113 /* KeyArtBoardApp.xcdatamodeld */,
 				B3B6E0AF19D5C9C100CE7113 /* Supporting Files */,
 				0797002319D76949006A2EA9 /* Line.swift */,
+				A2235AD519D8761500CF0AB1 /* ArtToAscii.swift */,
 			);
 			path = KeyArtBoardApp;
 			sourceTree = "<group>";
@@ -317,6 +323,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2235ADC19D8AD2700CF0AB1 /* ArrayToASCII.swift in Sources */,
+				A2235AD619D8761500CF0AB1 /* ArtToAscii.swift in Sources */,
 				B3B6E0B719D5C9C100CE7113 /* ViewController.swift in Sources */,
 				B3B6E0B519D5C9C100CE7113 /* KeyArtBoardApp.xcdatamodeld in Sources */,
 				0797001E19D7641D006A2EA9 /* DrawView.swift in Sources */,
