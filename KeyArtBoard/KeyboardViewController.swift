@@ -8,10 +8,10 @@
 
 import UIKit
 
-class KeyboardViewController: UIInputViewController {
+class KeyboardViewController: PageContentViewController {
 
     @IBOutlet var nextKeyboardButton: UIButton!
-    var artButtons : [KeyArtButton] = [KeyboardButtonFactory.generateKeyArtButton(title: "title", text: "text", place: 0)]
+    var buttons : Array<KeyArtButton> = Array<KeyArtButton>()
     var textForButton : [String: String] = ["": ""];
     
     override func updateViewConstraints() {
@@ -30,10 +30,14 @@ class KeyboardViewController: UIInputViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        for artButton in self.artButtons {
+        for artButton in self.buttons {
             self.drawNextButton(artButton)
         }
         self.drawNextKeyboardButton()
+    }
+    
+    func drawSwichButton() {
+        
     }
     
     func drawNextButton(artButton: KeyArtButton) {
@@ -46,12 +50,12 @@ class KeyboardViewController: UIInputViewController {
         var buttonCenterY = NSLayoutConstraint(item: nextButton, attribute: .CenterY, relatedBy: .Equal, toItem: self.view, attribute: .CenterY, multiplier: 1.0, constant: 0.0)
         self.view.addConstraints([buttonCenterX, buttonCenterY])
     }
-    
-    func insertArt(sender: UIButton) -> (){
-        var proxy = self.textDocumentProxy as UITextDocumentProxy
-        var text = self.textForButton[sender.titleLabel!.text!]
-        proxy.insertText(text!)
-    }
+//    
+//    func insertArt(sender: UIButton) -> (){
+//        var proxy = self.textDocumentProxy as UITextDocumentProxy
+//        var text = self.textForButton[sender.titleLabel!.text!]
+//        proxy.insertText(text!)
+//    }
 
     func drawNextKeyboardButton() {
         // Perform custom UI setup here
@@ -78,21 +82,21 @@ class KeyboardViewController: UIInputViewController {
         // Dispose of any resources that can be recreated
     }
 
-    override func textWillChange(textInput: UITextInput) {
-        // The app is about to change the document's contents. Perform any preparation here.
-    }
-
-    override func textDidChange(textInput: UITextInput) {
-        // The app has just changed the document's contents, the document context has been updated.
-    
-        var textColor: UIColor
-        var proxy = self.textDocumentProxy as UITextDocumentProxy
-        if proxy.keyboardAppearance == UIKeyboardAppearance.Dark {
-            textColor = UIColor.whiteColor()
-        } else {
-            textColor = UIColor.blackColor()
-        }
-        self.nextKeyboardButton.setTitleColor(textColor, forState: .Normal)
-    }
+//    override func textWillChange(textInput: UITextInput) {
+//        // The app is about to change the document's contents. Perform any preparation here.
+//    }
+//
+//    override func textDidChange(textInput: UITextInput) {
+//        // The app has just changed the document's contents, the document context has been updated.
+//    
+//        var textColor: UIColor
+//        var proxy = self.textDocumentProxy as UITextDocumentProxy
+//        if proxy.keyboardAppearance == UIKeyboardAppearance.Dark {
+//            textColor = UIColor.whiteColor()
+//        } else {
+//            textColor = UIColor.blackColor()
+//        }
+//        self.nextKeyboardButton.setTitleColor(textColor, forState: .Normal)
+//    }
 
 }

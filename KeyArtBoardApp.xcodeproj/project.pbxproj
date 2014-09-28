@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B31DF31319D87FC800429427 /* KeyboardCanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31DF31219D87FC700429427 /* KeyboardCanvasViewController.swift */; };
+		B31DF31719D881C400429427 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31DF31619D881C400429427 /* ContainerViewController.swift */; };
+		B31DF31919D88A4800429427 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31DF31819D88A4800429427 /* PageContentViewController.swift */; };
 		B3B6E0B219D5C9C100CE7113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B6E0B119D5C9C100CE7113 /* AppDelegate.swift */; };
 		B3B6E0B519D5C9C100CE7113 /* KeyArtBoardApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3B6E0B319D5C9C100CE7113 /* KeyArtBoardApp.xcdatamodeld */; };
 		B3B6E0B719D5C9C100CE7113 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B6E0B619D5C9C100CE7113 /* ViewController.swift */; };
@@ -17,6 +20,9 @@
 		B3B6E0DD19D5C9D100CE7113 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B6E0DC19D5C9D100CE7113 /* KeyboardViewController.swift */; };
 		B3B6E0E019D5C9D100CE7113 /* KeyArtBoard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B3B6E0D819D5C9D100CE7113 /* KeyArtBoard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B3B6E0E819D5CCD100CE7113 /* KeyboardButtonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B6E0E719D5CCD100CE7113 /* KeyboardButtonFactory.swift */; };
+		B3E00E1319D89CCB009C47AC /* HotKeysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E00E1219D89CCB009C47AC /* HotKeysViewController.swift */; };
+		B3E00E1519D8B3FD009C47AC /* ContainerScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E00E1419D8B3FD009C47AC /* ContainerScrollViewController.swift */; };
+		B3E00E1B19D8C839009C47AC /* IconScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E00E1A19D8C839009C47AC /* IconScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +64,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B31DF31219D87FC700429427 /* KeyboardCanvasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardCanvasViewController.swift; sourceTree = "<group>"; };
+		B31DF31619D881C400429427 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		B31DF31819D88A4800429427 /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
 		B3B6E0AC19D5C9C100CE7113 /* KeyArtBoardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyArtBoardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B6E0B019D5C9C100CE7113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3B6E0B119D5C9C100CE7113 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +82,9 @@
 		B3B6E0DB19D5C9D100CE7113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3B6E0DC19D5C9D100CE7113 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		B3B6E0E719D5CCD100CE7113 /* KeyboardButtonFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardButtonFactory.swift; sourceTree = "<group>"; };
+		B3E00E1219D89CCB009C47AC /* HotKeysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotKeysViewController.swift; sourceTree = "<group>"; };
+		B3E00E1419D8B3FD009C47AC /* ContainerScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerScrollViewController.swift; sourceTree = "<group>"; };
+		B3E00E1A19D8C839009C47AC /* IconScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,9 +174,15 @@
 		B3B6E0D919D5C9D100CE7113 /* KeyArtBoard */ = {
 			isa = PBXGroup;
 			children = (
-				B3B6E0DC19D5C9D100CE7113 /* KeyboardViewController.swift */,
-				B3B6E0E719D5CCD100CE7113 /* KeyboardButtonFactory.swift */,
+				B3E00E1419D8B3FD009C47AC /* ContainerScrollViewController.swift */,
+				B31DF31619D881C400429427 /* ContainerViewController.swift */,
+				B31DF31819D88A4800429427 /* PageContentViewController.swift */,
+				B3E00E1219D89CCB009C47AC /* HotKeysViewController.swift */,
+				B31DF31219D87FC700429427 /* KeyboardCanvasViewController.swift */,
 				B3B6E0DA19D5C9D100CE7113 /* Supporting Files */,
+				B3B6E0E719D5CCD100CE7113 /* KeyboardButtonFactory.swift */,
+				B3B6E0DC19D5C9D100CE7113 /* KeyboardViewController.swift */,
+				B3E00E1A19D8C839009C47AC /* IconScrollView.swift */,
 			);
 			path = KeyArtBoard;
 			sourceTree = "<group>";
@@ -253,6 +271,7 @@
 					};
 					B3B6E0D719D5C9D100CE7113 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 2S3D8J8M3T;
 					};
 				};
 			};
@@ -328,6 +347,12 @@
 			files = (
 				B3B6E0DD19D5C9D100CE7113 /* KeyboardViewController.swift in Sources */,
 				B3B6E0E819D5CCD100CE7113 /* KeyboardButtonFactory.swift in Sources */,
+				B3E00E1B19D8C839009C47AC /* IconScrollView.swift in Sources */,
+				B3E00E1519D8B3FD009C47AC /* ContainerScrollViewController.swift in Sources */,
+				B31DF31919D88A4800429427 /* PageContentViewController.swift in Sources */,
+				B31DF31719D881C400429427 /* ContainerViewController.swift in Sources */,
+				B3E00E1319D89CCB009C47AC /* HotKeysViewController.swift in Sources */,
+				B31DF31319D87FC800429427 /* KeyboardCanvasViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +530,8 @@
 		B3B6E0E419D5C9D100CE7113 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -513,6 +540,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -520,10 +548,13 @@
 		B3B6E0E519D5C9D100CE7113 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = KeyArtBoard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

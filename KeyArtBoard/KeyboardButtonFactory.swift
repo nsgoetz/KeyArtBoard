@@ -38,6 +38,18 @@ class KeyboardButtonFactory: NSObject {
         var artButton = KeyArtButton(title: title, text: text, button: button, place: place)
         return artButton
     }
-    
+
+    class func generateFixedKeyArtButton(#title: String, text: String, x: CGFloat, y: CGFloat, width: CGFloat, height : CGFloat) -> KeyArtButton {
+        var button = UIButton.buttonWithType(.System) as UIButton
+        button.setTitle(title, forState: .Normal)
+        button.frame = (CGRect(x : x, y: y, width: width, height: height))
+        button.setTranslatesAutoresizingMaskIntoConstraints(false)
+        
+        //        button.titleLabel!.font = UIFont.systemFontOfSize(32)
+        button.backgroundColor = UIColor(white: 1.0, alpha: 0.25)
+        var artButton = KeyArtButton(title: title, text: text, button: button, place: 0)
+        return artButton
+    }
+
     
 }
