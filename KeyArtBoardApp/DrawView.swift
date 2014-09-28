@@ -19,12 +19,12 @@ class DrawView: UIView {
     }
     override func touchesBegan(touches: (NSSet!), withEvent event: (UIEvent!)) {
         if let point = touches.anyObject()?.locationInView(self){
-        var lastPoint = touches.anyObject()?.locationInView(self)
+        lastPoint = touches.anyObject()?.locationInView(self)
     }
     }
     override func touchesMoved(touches: (NSSet!), withEvent event: (UIEvent!)) {
-        if let point = touches.anyObject().locationInView(self){
-            var newPoint = touches.anyObject()?.locationInView(self)
+        if let touch = touches.anyObject() as? UITouch{
+            newPoint = touch.locationInView(self)
         }
         lines.append(Line(start: lastPoint!, end: newPoint!))
         lastPoint = newPoint!
