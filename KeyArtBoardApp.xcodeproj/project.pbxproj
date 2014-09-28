@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0795C86F19D892060017BFA5 /* AsciiArtItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0795C86E19D892060017BFA5 /* AsciiArtItem.swift */; };
+		0795C87119D892480017BFA5 /* ItemsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0795C87019D892480017BFA5 /* ItemsManager.swift */; };
 		0797001E19D7641D006A2EA9 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797001D19D7641D006A2EA9 /* DrawView.swift */; };
 		0797002219D766D7006A2EA9 /* CreateNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797002119D766D7006A2EA9 /* CreateNewViewController.swift */; };
 		0797002419D76949006A2EA9 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797002319D76949006A2EA9 /* Line.swift */; };
@@ -16,7 +18,7 @@
 		0797002D19D79E6C006A2EA9 /* TypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797002B19D79E6C006A2EA9 /* TypeVC.swift */; };
 		0797002E19D79E6C006A2EA9 /* TypeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0797002C19D79E6C006A2EA9 /* TypeVC.xib */; };
 		0797003019D7A685006A2EA9 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797002F19D7A685006A2EA9 /* KeyboardViewController.swift */; };
-		0798971B19D7AB8E00CA4119 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0798971A19D7AB8E00CA4119 /* TableViewController.swift */; };
+		0798971B19D7AB8E00CA4119 /* ExistingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0798971A19D7AB8E00CA4119 /* ExistingViewController.swift */; };
 		0798971D19D7AD8A00CA4119 /* NamingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0798971C19D7AD8A00CA4119 /* NamingVC.swift */; };
 		0798972119D7C09B00CA4119 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0798972019D7C09B00CA4119 /* Twitter.framework */; };
 		B3B6E0B219D5C9C100CE7113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B6E0B119D5C9C100CE7113 /* AppDelegate.swift */; };
@@ -68,6 +70,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0795C86E19D892060017BFA5 /* AsciiArtItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsciiArtItem.swift; sourceTree = "<group>"; };
+		0795C87019D892480017BFA5 /* ItemsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsManager.swift; sourceTree = "<group>"; };
 		0797001D19D7641D006A2EA9 /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 		0797002119D766D7006A2EA9 /* CreateNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewViewController.swift; sourceTree = "<group>"; };
 		0797002319D76949006A2EA9 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
@@ -77,7 +81,7 @@
 		0797002B19D79E6C006A2EA9 /* TypeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeVC.swift; sourceTree = "<group>"; };
 		0797002C19D79E6C006A2EA9 /* TypeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TypeVC.xib; sourceTree = "<group>"; };
 		0797002F19D7A685006A2EA9 /* KeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
-		0798971A19D7AB8E00CA4119 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		0798971A19D7AB8E00CA4119 /* ExistingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExistingViewController.swift; sourceTree = "<group>"; };
 		0798971C19D7AD8A00CA4119 /* NamingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamingVC.swift; sourceTree = "<group>"; };
 		0798972019D7C09B00CA4119 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		B3B6E0AC19D5C9C100CE7113 /* KeyArtBoardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyArtBoardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,7 +155,9 @@
 				0798971C19D7AD8A00CA4119 /* NamingVC.swift */,
 				0797002119D766D7006A2EA9 /* CreateNewViewController.swift */,
 				B3B6E0BB19D5C9C100CE7113 /* Images.xcassets */,
-				0798971A19D7AB8E00CA4119 /* TableViewController.swift */,
+				0798971A19D7AB8E00CA4119 /* ExistingViewController.swift */,
+				0795C86E19D892060017BFA5 /* AsciiArtItem.swift */,
+				0795C87019D892480017BFA5 /* ItemsManager.swift */,
 				B3B6E0BD19D5C9C100CE7113 /* LaunchScreen.xib */,
 				B3B6E0B319D5C9C100CE7113 /* KeyArtBoardApp.xcdatamodeld */,
 				B3B6E0AF19D5C9C100CE7113 /* Supporting Files */,
@@ -341,10 +347,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0795C87119D892480017BFA5 /* ItemsManager.swift in Sources */,
 				B3B6E0B519D5C9C100CE7113 /* KeyArtBoardApp.xcdatamodeld in Sources */,
 				0797001E19D7641D006A2EA9 /* DrawView.swift in Sources */,
-				0798971B19D7AB8E00CA4119 /* TableViewController.swift in Sources */,
+				0798971B19D7AB8E00CA4119 /* ExistingViewController.swift in Sources */,
 				0797002419D76949006A2EA9 /* Line.swift in Sources */,
+				0795C86F19D892060017BFA5 /* AsciiArtItem.swift in Sources */,
 				B3B6E0B219D5C9C100CE7113 /* AppDelegate.swift in Sources */,
 				0798971D19D7AD8A00CA4119 /* NamingVC.swift in Sources */,
 				0797002219D766D7006A2EA9 /* CreateNewViewController.swift in Sources */,

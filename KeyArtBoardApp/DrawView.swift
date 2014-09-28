@@ -48,14 +48,24 @@ class DrawView: UIView {
         CGContextStrokePath(context)
     }
     
+    @IBAction func clearTapped() {
+        lines = []
+        self.setNeedsDisplay()
+    }
     
     @IBAction func plusTapped() {
-        //UIGraphicsBeginImageContextWithOptions(canvas.bounds.size, false, 0.0)
-        //var context = UIGraphicsGetCurrentContext()
-        var image = UIGraphicsGetImageFromCurrentImageContext()
-        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+        let layer = UIApplication.sharedApplication().keyWindow.layer
+        let scale = UIScreen.mainScreen().scale
+        UIGraphicsBeginImageContextWithOptions(layer.frame.size, false, scale);
+        
+        layer.renderInContext(UIGraphicsGetCurrentContext())
+        let screenshot = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        UIImageWriteToSavedPhotosAlbum(screenshot, nil, nil, nil)
         
     }
+    
     
     
     /*

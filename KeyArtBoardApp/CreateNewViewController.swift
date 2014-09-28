@@ -23,10 +23,7 @@ class CreateNewViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func clearTapped() {
-        var theDrawView = drawView as DrawView!
-        theDrawView.lines = []
-        theDrawView.setNeedsDisplay()
+    
         
     }
     
@@ -42,4 +39,4 @@ class CreateNewViewController: UIViewController {
     }
     */
 
-}
+
