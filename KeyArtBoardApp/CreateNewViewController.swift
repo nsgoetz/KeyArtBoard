@@ -30,14 +30,7 @@ class CreateNewViewController: UIViewController {
         
     }
     
-    @IBAction func plusTapped() {
-        var canvas = drawView as DrawView!
-        //UIGraphicsBeginImageContextWithOptions(canvas.bounds.size, false, 0.0)
-        //var context = UIGraphicsGetCurrentContext()
-
-        var SaveImage: UIImage = canvas.image!
-        UIImageWriteToSavedPhotosAlbum(SaveImage, self, Selector("image:didFinishSavingWithError:contextInfo:"), nil)
-    }
+    
 
     /*
     // MARK: - Navigation

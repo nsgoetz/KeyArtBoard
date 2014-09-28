@@ -13,8 +13,7 @@ class DrawView: UIView {
     var lines: [Line] = []
     var lastPoint: CGPoint?
     var newPoint: CGPoint?
-    var context = UIGraphicsGetCurrentContext()
-    var image: UIImage?
+
 
     
     required init(coder aDecoder: (NSCoder!)) {
@@ -36,7 +35,7 @@ class DrawView: UIView {
     }
     
     override func drawRect(rect: CGRect) {
-        
+        var context = UIGraphicsGetCurrentContext()
         CGContextBeginPath(context)
         for line in lines {
             CGContextMoveToPoint(context, line.start.x, line.start.y)
@@ -47,8 +46,17 @@ class DrawView: UIView {
         CGContextSetLineWidth(context, 5)
         CGContextSetLineCap(context, kCGLineCapRound)
         CGContextStrokePath(context)
-        image = UIGraphicsGetImageFromCurrentImageContext()
     }
+    
+    
+    @IBAction func plusTapped() {
+        //UIGraphicsBeginImageContextWithOptions(canvas.bounds.size, false, 0.0)
+        //var context = UIGraphicsGetCurrentContext()
+        var image = UIGraphicsGetImageFromCurrentImageContext()
+        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+        
+    }
+    
     
     /*
     // Only override drawRect: if you perform custom drawing.

@@ -27,14 +27,13 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="clearTapped" destination="ECv-zK-Cwh" eventType="touchUpInside" id="nFF-Sf-Jyr"/>
+                                    <action selector="clearTapped" destination="ECv-zK-Cwh" eventType="touchUpInside" id="21O-VU-zhj"/>
                                 </connections>
                             </button>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="ROS-J7-GOl">
                             <connections>
-                                <action selector="plusTapped" destination="ECv-zK-Cwh" id="O4Y-dW-meX"/>
-                                <segue destination="Pnj-Vk-OB3" kind="presentation" id="aVG-ln-zyN"/>
+                                <action selector="plusTapped" destination="zP5-Fd-ExO" id="4OD-lv-Rw1"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -104,11 +103,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Ma-GB-NyG">
-                                <rect key="frame" x="66" y="100" width="468" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p7p-LS-7FG">
                                 <rect key="frame" x="0.0" y="184" width="600" height="372"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -116,6 +110,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Ma-GB-NyG">
+                                <rect key="frame" x="66" y="144" width="468" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -128,12 +127,12 @@
                     <navigationItem key="navigationItem" id="NYo-gh-FIV">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="js0-5L-qt3">
                             <connections>
-                                <action selector="cancel:" destination="Ub7-WJ-Qme" id="vAc-Mc-5rV"/>
+                                <action selector="cancel:" destination="Ub7-WJ-Qme" id="P5Z-sk-AvT"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="SE1-UU-YPU">
                             <connections>
-                                <action selector="saveUnwind:" destination="Ub7-WJ-Qme" id="C8r-Yc-ldy"/>
+                                <action selector="saveUnwind:" destination="Ub7-WJ-Qme" id="zkI-F8-8dt"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
