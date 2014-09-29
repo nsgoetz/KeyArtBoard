@@ -35,6 +35,7 @@ class CreateNewViewController: UIViewController {
             var asciiArt = toASCII(scaleDown(pixelArray, 5, threshold: 0.25), false)
             var NC = segue.destinationViewController as UINavigationController
             var VC = NC.topViewController as NamingVC
+            UIImageWriteToSavedPhotosAlbum(screenshot, nil, nil, nil)
             VC.ascii = asciiArt
             VC.pic = screenshot
             
