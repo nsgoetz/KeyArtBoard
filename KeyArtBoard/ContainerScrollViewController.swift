@@ -21,6 +21,8 @@ class ContainerScrollViewController: UIInputViewController {
     var icons : [IconButton] = []
 
     var scrollView :IconScrollView? = nil
+    var drawingButton :UIBarButtonItem?
+    var datastore = DataStore()
     
     override func updateViewConstraints() {
         super.updateViewConstraints()
@@ -33,7 +35,7 @@ class ContainerScrollViewController: UIInputViewController {
         print(self.view.frame)
         print("height")
         print(self.iconHeight)
-        var iconCount = 17;
+        var iconCount = self.datastore.numButtons();
         var totalWidth = (CGFloat(iconCount + 1) / self.rowsPerPage) * self.iconWidth
         self.scrollView = IconScrollView()
         self.scrollView!.frame = CGRect(x: 0, y:0, width: self.scrollView!.intrinsicContentSize().width, height: self.scrollView!.intrinsicContentSize().height)
@@ -43,6 +45,12 @@ class ContainerScrollViewController: UIInputViewController {
         self.icons = makeButtonsForCount(iconCount)
         self.drawNextKeyboardButton()
         // Do any additional setup after loading the view.
+        
+        self.drawingButton = UIBarButtonItem(barButtonSystemItem: .Compose, target:self, action: "")
+//        self.view.addSubview(self.drawingButton)
+        
+//        var plusconstraints = NSLayoutConstraint(item: self.drawingButton, attribute: .bottom, relatedBy: .Equal, toItem: self.view, attribute: .Top, multiplier: 1, constant: y)
+        
         self.view.addSubview(scrollView!)   
     }
     
@@ -52,7 +60,8 @@ class ContainerScrollViewController: UIInputViewController {
         for (var i = 0; i < count; i++){
             var y = CGFloat(i % 2) * self.iconHeight
             var x = (CGFloat(i / 2) * self.iconWidth)
-            var button = KeyboardButtonFactory.generateFixedKeyArtButton(title: String(i), text: String(i), width: self.iconWidth, height: self.iconHeight).button
+            var button = KeyboardButtonFactory.generateFixedKeyArtButton(title: "", text: self.datastore.stringForButtonAtIndex(i), width: self.iconWidth, height: self.iconHeight).button
+            button.setBackgroundImage(self.datastore.imageForButtonAtIndex(i), forState: .Normal)
             button.frame = CGRect(x:0,y:0,width:self.iconWidth,height:self.iconWidth)
             button.layer.cornerRadius = 10
             var constr1 = NSLayoutConstraint(item: button, attribute: .Left, relatedBy: .Equal, toItem: self.scrollView!, attribute: .Left, multiplier: 1, constant: x);
@@ -70,7 +79,7 @@ class ContainerScrollViewController: UIInputViewController {
         // Perform custom UI setup here
         self.nextKeyboardButton = UIButton.buttonWithType(.System) as UIButton
         
-        self.nextKeyboardButton.setTitle(NSLocalizedString("Next Keyboard", comment: "Title for 'Next Keyboard' button"), forState: .Normal)
+        self.nextKeyboardButton.setTitle(NSLocalizedString("🌐", comment: "Title for 'Next Keyboard' button"), forState: .Normal)
         
         self.nextKeyboardButton.sizeToFit()
         self.nextKeyboardButton.setTranslatesAutoresizingMaskIntoConstraints(false)
