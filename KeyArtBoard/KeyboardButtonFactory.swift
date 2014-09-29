@@ -11,7 +11,7 @@ import UIKit
 struct KeyArtButton {
     var title: NSString;
     var text: NSString;
-    var button: UIButton;
+    var button: IconButton;
     var place: Int;
 }
 
@@ -28,7 +28,7 @@ class KeyboardButtonFactory: NSObject {
     }
     
     class func generateKeyArtButton(#title: String, text: String, place: Int) -> KeyArtButton {
-        var button = UIButton.buttonWithType(.System) as UIButton
+        var button = IconButton.buttonWithType(.System) as IconButton
         button.setTitle(title, forState: .Normal)
         button.sizeToFit()
         button.setTranslatesAutoresizingMaskIntoConstraints(false)
@@ -39,10 +39,10 @@ class KeyboardButtonFactory: NSObject {
         return artButton
     }
 
-    class func generateFixedKeyArtButton(#title: String, text: String, x: CGFloat, y: CGFloat, width: CGFloat, height : CGFloat) -> KeyArtButton {
-        var button = UIButton.buttonWithType(.System) as UIButton
+    class func generateFixedKeyArtButton(#title: String, text: String, width: CGFloat, height : CGFloat) -> KeyArtButton {
+        var button = IconButton.buttonWithType(.System) as IconButton
         button.setTitle(title, forState: .Normal)
-        button.frame = (CGRect(x : x, y: y, width: width, height: height))
+        button.sizeThatFits(CGSize(width: width, height: height))
         button.setTranslatesAutoresizingMaskIntoConstraints(false)
         
         //        button.titleLabel!.font = UIFont.systemFontOfSize(32)

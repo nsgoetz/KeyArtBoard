@@ -14,11 +14,12 @@ class ContainerScrollViewController: UIInputViewController {
     var colsPerPage :CGFloat =  4
     var rowsPerPage :CGFloat = 2
     var bottomMargin :CGFloat = 20
-    var iconHeight :CGFloat = 20
-    var iconWidth :CGFloat = 20
+    var iconHeight :CGFloat = 95
+    var iconWidth :CGFloat = 80
     var iconXSpace :CGFloat = 0
     var iconYSpace :CGFloat = 0
-    var icons : [UIButton] = []
+    var icons : [IconButton] = []
+
     var scrollView :IconScrollView? = nil
     
     override func updateViewConstraints() {
@@ -28,32 +29,38 @@ class ContainerScrollViewController: UIInputViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.view.frame = CGRect(x: 50, y: 50,width: 300, height: 200)
-        self.iconHeight = CGFloat(self.view.frame.height) / CGFloat(self.rowsPerPage)
-        self.iconWidth = CGFloat(self.view.frame.width) / CGFloat(self.colsPerPage)
         print("frame")
         print(self.view.frame)
         print("height")
         print(self.iconHeight)
-        var iconCount = 3;
+        var iconCount = 17;
         var totalWidth = (CGFloat(iconCount + 1) / self.rowsPerPage) * self.iconWidth
         self.scrollView = IconScrollView()
-        self.scrollView!.backgroundColor = UIColor.redColor()
-        self.icons = makeButtonsForCount(3)
+        self.scrollView!.frame = CGRect(x: 0, y:0, width: self.scrollView!.intrinsicContentSize().width, height: self.scrollView!.intrinsicContentSize().height)
+        var wide = CGFloat(((iconCount + 1) / 2) + 1) * self.iconWidth
+        self.scrollView!.contentSize = CGSize(width: wide, height: self.scrollView!.frame.height)
+//        self.scrollView!.backgroundColor = UIColor.redColor()
+        self.icons = makeButtonsForCount(iconCount)
         self.drawNextKeyboardButton()
         // Do any additional setup after loading the view.
         self.view.addSubview(scrollView!)   
     }
     
-    func makeButtonsForCount(count : Int) -> [UIButton] {
-        var buttons : [UIButton] = [];
+    func makeButtonsForCount(count : Int) -> [IconButton] {
+        var buttons : [IconButton] = [];
         
         for (var i = 0; i < count; i++){
             var y = CGFloat(i % 2) * self.iconHeight
-            var x = CGFloat(i / 2) * self.iconWidth
-            var button = KeyboardButtonFactory.generateFixedKeyArtButton(title: String(i), text: String(i), x: x, y: y, width: self.iconWidth, height: self.iconHeight).button
-            button.backgroundColor = [UIColor.blackColor(), UIColor.blueColor(), UIColor.greenColor()][i % 3]
+            var x = (CGFloat(i / 2) * self.iconWidth)
+            var button = KeyboardButtonFactory.generateFixedKeyArtButton(title: String(i), text: String(i), width: self.iconWidth, height: self.iconHeight).button
+            button.frame = CGRect(x:0,y:0,width:self.iconWidth,height:self.iconWidth)
+            button.layer.cornerRadius = 10
+            var constr1 = NSLayoutConstraint(item: button, attribute: .Left, relatedBy: .Equal, toItem: self.scrollView!, attribute: .Left, multiplier: 1, constant: x);
+            var constr2 = NSLayoutConstraint(item: button, attribute: .Top, relatedBy: .Equal, toItem: self.scrollView!, attribute: .Top, multiplier: 1, constant: y);
             self.scrollView!.addSubview(button)
+            self.scrollView!.addConstraints([constr1, constr2])
+//            button.backgroundColor = [UIColor.blackColor(), UIColor.blueColor(), UIColor.greenColor()][i % 3]
+            button.userInteractionEnabled = false
             buttons += [button]
         }
         return buttons

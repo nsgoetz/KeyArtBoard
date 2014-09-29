@@ -1,5 +1,5 @@
 //
-//  IconScrollView.swift
+//  IconButton.swift
 //  KeyArtBoardApp
 //
 //  Created by Noah Goetz on 9/28/14.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class IconScrollView: UIScrollView {
+class IconButton: UIButton {
 
     /*
     // Only override drawRect: if you perform custom drawing.
@@ -18,11 +18,8 @@ class IconScrollView: UIScrollView {
         // Drawing code
     }
     */
-
-    
     override func intrinsicContentSize() -> CGSize {
-        return CGSize(width: 400, height: 200)
+        return CGSize(width: 80, height: 95)
     }
-    
- 
+
 }
