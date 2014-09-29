@@ -54,15 +54,15 @@ class DrawView: UIView {
     }
     
     @IBAction func plusTapped() {
-        let layer = UIApplication.sharedApplication().keyWindow.layer
-        let scale = UIScreen.mainScreen().scale
-        UIGraphicsBeginImageContextWithOptions(layer.frame.size, false, scale);
+//        let layer = self.layer
+//        let scale = UIScreen.mainScreen().scale
+//        UIGraphicsBeginImageContextWithOptions(layer.frame.size, false, scale);
+//        
+//        layer.renderInContext(UIGraphicsGetCurrentContext())
+//        let screenshot = UIGraphicsGetImageFromCurrentImageContext()
+        //UIGraphicsEndImageContext()
         
-        layer.renderInContext(UIGraphicsGetCurrentContext())
-        let screenshot = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        
-        UIImageWriteToSavedPhotosAlbum(screenshot, nil, nil, nil)
+        //UIImageWriteToSavedPhotosAlbum(screenshot, nil, nil, nil)
         
     }
     

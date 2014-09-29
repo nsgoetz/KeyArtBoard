@@ -46,7 +46,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="ROS-J7-GOl">
                             <connections>
-                                <segue destination="Pnj-Vk-OB3" kind="modal" id="f1W-S3-Zuh"/>
+                                <segue destination="Pnj-Vk-OB3" kind="modal" identifier="plusSegue" id="f1W-S3-Zuh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -116,24 +116,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="p7p-LS-7FG">
+                                <rect key="frame" x="0.0" y="194" width="320" height="330"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Ma-GB-NyG">
                                 <rect key="frame" x="66" y="144" width="188" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p7p-LS-7FG">
-                                <rect key="frame" x="0.0" y="184" width="600" height="372"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="7Ma-GB-NyG" secondAttribute="trailing" constant="50" id="DxO-Hb-jkE"/>
                             <constraint firstItem="7Ma-GB-NyG" firstAttribute="top" secondItem="lHs-xF-QzO" secondAttribute="bottom" constant="80" id="Gam-Kq-Nwo"/>
+                            <constraint firstItem="p7p-LS-7FG" firstAttribute="leading" secondItem="vwb-Um-HoP" secondAttribute="leadingMargin" constant="-16" id="aeQ-DG-0gm"/>
+                            <constraint firstItem="JpM-Fj-LwX" firstAttribute="top" secondItem="p7p-LS-7FG" secondAttribute="bottom" id="kO9-2D-3wL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="p7p-LS-7FG" secondAttribute="trailing" constant="-16" id="rNY-0K-MiQ"/>
                             <constraint firstItem="7Ma-GB-NyG" firstAttribute="leading" secondItem="vwb-Um-HoP" secondAttribute="leadingMargin" constant="50" id="z8G-n3-pDo"/>
+                            <constraint firstItem="p7p-LS-7FG" firstAttribute="top" secondItem="JpM-Fj-LwX" secondAttribute="bottom" constant="-330" id="zG3-uT-q2K"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -161,10 +165,14 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="asciiText" destination="p7p-LS-7FG" id="fbR-U2-Yhd"/>
+                        <outlet property="textField" destination="7Ma-GB-NyG" id="w2h-ji-cUk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ei4-3l-1KC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="937.06666666666661" y="1265.6933333333334"/>
+            <point key="canvasLocation" x="937" y="1265"/>
         </scene>
         <!--Create New-->
         <scene sceneID="paX-FO-xaM">

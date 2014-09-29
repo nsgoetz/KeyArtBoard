@@ -9,7 +9,6 @@
 import UIKit
 
 class KeyboardViewController: UIInputViewController {
-
     @IBOutlet var nextKeyboardButton: UIButton!
     var artButtons : [KeyArtButton] = [KeyboardButtonFactory.generateKeyArtButton(title: "title", text: "text", place: 0)]
     var textForButton : [String: String] = ["": ""];

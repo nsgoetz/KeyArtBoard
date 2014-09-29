@@ -8,13 +8,17 @@
 
 import UIKit
 
+
 class NamingVC: UIViewController {
     
-
+    
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var asciiText: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        asciiText.text = returnStr()
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,17 +38,8 @@ class NamingVC: UIViewController {
     */
     
     @IBAction func sharePressed() {
-        let W = Pixel.White
-        let B = Pixel.Black
-        let test2 = [[W, W, W, W, B, B, B, B, W, W],
-            [W,W,W, B, B, B,B,B,B,W],
-            [W,W,B,B,B,B,B,B,B,B,B,W],
-            [W,B,B,W,W,W,B,B,B,B],
-            [W,B,B,B,W,B,B,
-                B,B,B],
-            [B,B,B,B,B,B,B,B,B,B]]
-        var testString : String = toASCII(scaleDown(test2, 2, threshold: 0.25), false)
-        let controller = UIActivityViewController(activityItems: [testString], applicationActivities: nil)
+        
+        let controller = UIActivityViewController(activityItems: [returnStr()], applicationActivities: nil)
         navigationController?.presentViewController(controller, animated: true, completion: nil)
     }
     

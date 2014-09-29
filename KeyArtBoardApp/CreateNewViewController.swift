@@ -22,11 +22,23 @@ class CreateNewViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "plusSegue" {
+            let layer = UIApplication.sharedApplication().keyWindow.layer
+            let scale = UIScreen.mainScreen().scale
+            UIGraphicsBeginImageContextWithOptions(layer.frame.size, false, scale);
+            
+            layer.renderInContext(UIGraphicsGetCurrentContext())
+            let screenshot = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            
+            UIImageWriteToSavedPhotosAlbum(screenshot, nil, nil, nil)
     
-        
     }
+}
+}
     
-    
+
 
     /*
     // MARK: - Navigation

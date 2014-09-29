@@ -117,3 +117,16 @@ let test1 = [[W, B, B, W],
     [B,B,B,B,B,B,B,B,B,B]]
     println(toASCII(scaleDown(test2, 2, threshold: 0.25), false))
 }
+
+func returnStr() -> String {
+    var W = Pixel.White
+    var B = Pixel.Black
+    var test2 = [[W, W, W, W, B, B, B, B, W, W],
+        [W,W,W, B, B, B,B,B,B,W],
+        [W,W,B,B,B,B,B,B,B,B,B,W],
+        [W,B,B,W,W,W,B,B,B,B],
+        [W,B,B,B,W,B,B,B,B,B],
+        [B,B,B,B,B,B,B,B,B,B]]
+    var testString : String = toASCII(scaleDown(test2, 2, threshold: 0.25), false)
+    return testString
+}
