@@ -14,9 +14,10 @@ class NamingVC: UIViewController {
     
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var asciiText: UITextView!
+    var pic : UIImage?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         asciiText.text = returnStr()
     }
@@ -48,6 +49,7 @@ class NamingVC: UIViewController {
     }
 
     @IBAction func saveUnwind(sender: AnyObject) {
+        UIImageWriteToSavedPhotosAlbum(pic!, nil, nil, nil)
             dismissViewControllerAnimated(true, completion: nil)
         
         }

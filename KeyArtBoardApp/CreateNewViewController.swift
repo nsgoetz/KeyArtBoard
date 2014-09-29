@@ -31,9 +31,13 @@ class CreateNewViewController: UIViewController {
             layer.renderInContext(UIGraphicsGetCurrentContext())
             let screenshot = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()
+            var NC = segue.destinationViewController as UINavigationController
+            var VC = NC.topViewController as NamingVC
+            VC.pic = screenshot
             
-            UIImageWriteToSavedPhotosAlbum(screenshot, nil, nil, nil)
-    
+            
+            
+            
     }
 }
 }
