@@ -178,7 +178,7 @@
         <scene sceneID="paX-FO-xaM">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bZN-V3-ndE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Create New" id="MEc-pt-eVv"/>
+                    <tabBarItem key="tabBarItem" title="Create New" image="Tab Bar plus" id="MEc-pt-eVv"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fo7-yW-4VD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -215,7 +215,7 @@
         <scene sceneID="Zxi-cC-OtC">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N1l-4x-u8a" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Existing" id="6Ce-zh-EPR"/>
+                    <tabBarItem key="tabBarItem" title="Existing" image="Tab Bar butter" id="6Ce-zh-EPR"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="huH-kz-mGs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -231,6 +231,10 @@
             <point key="canvasLocation" x="742.39999999999998" y="-103.18666666666667"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Tab Bar butter" width="30" height="30"/>
+        <image name="Tab Bar plus" width="30" height="30"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

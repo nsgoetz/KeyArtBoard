@@ -24,16 +24,18 @@ class CreateNewViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "plusSegue" {
-            let layer = UIApplication.sharedApplication().keyWindow.layer
+            let layer = self.view.layer
             let scale = UIScreen.mainScreen().scale
             UIGraphicsBeginImageContextWithOptions(layer.frame.size, false, scale);
             
             layer.renderInContext(UIGraphicsGetCurrentContext())
             let screenshot = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()
+            var pixelArray = imageToArray(screenshot)
+            var asciiArt = toASCII(scaleDown(pixelArray, 5, threshold: 0.25), false)
             var NC = segue.destinationViewController as UINavigationController
             var VC = NC.topViewController as NamingVC
-            VC.pic = screenshot
+            VC.pic = asciiArt
             
             
             

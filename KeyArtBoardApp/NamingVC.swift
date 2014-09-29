@@ -14,12 +14,12 @@ class NamingVC: UIViewController {
     
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var asciiText: UITextView!
-    var pic : UIImage?
+    var pic :String?
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        asciiText.text = returnStr()
+        asciiText.text = pic
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,7 +49,7 @@ class NamingVC: UIViewController {
     }
 
     @IBAction func saveUnwind(sender: AnyObject) {
-        UIImageWriteToSavedPhotosAlbum(pic!, nil, nil, nil)
+    //DataStore().addButton(pic, text: <#NSString#>)
             dismissViewControllerAnimated(true, completion: nil)
         
         }
