@@ -14,12 +14,13 @@ class NamingVC: UIViewController {
     
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var asciiText: UITextView!
-    var pic :String?
+    var pic: UIImage?
+    var ascii: String?
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        asciiText.text = pic
+        asciiText.text = ascii
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,7 +50,7 @@ class NamingVC: UIViewController {
     }
 
     @IBAction func saveUnwind(sender: AnyObject) {
-    //DataStore().addButton(pic, text: <#NSString#>)
+    DataStore().addButton(pic!, text: ascii!)
             dismissViewControllerAnimated(true, completion: nil)
         
         }
